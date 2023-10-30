@@ -146,7 +146,7 @@ footer>p {
   background-color: #106b98;
   font-weight: bold;
   border-radius: 5px;
-  width: 180px;
+  max-width: 180px;
 }
 
 .btn:hover {
@@ -424,7 +424,11 @@ li {
   width: 160px;
   }
 
-  .contact-container {
+  .contact-container, .btn {
     font-size: smaller;
+  }
+
+  .contact-container .btn {
+    font-size: x-small;
   }
 }
