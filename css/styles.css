@@ -360,5 +360,10 @@ li {
 @media only screen and (max-width: 575px) {
  .customer-feedback {
   font-size: small;
+  padding: 15px 0px;
+}
+
+blockquote {
+  line-height: 25px;
 }
 }
