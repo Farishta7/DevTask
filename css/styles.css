@@ -150,7 +150,7 @@ img {
 .four-images-css {
   /* This will set the initial position of the image to be centered both horizontally and vertically, placing the image in the center of the a tag. */
   background-position: center center;
-  /* This property will tell the browser to scale the image to cover the entire a tag and still maintain the aspect ratio (this would mean some part of the image will be cropped depending on the width of the users screen). */
+  /* This property will tell the browser to scale the image to cover the entire a tag and still maintain the aspect ratio (this will mean some part of the image will be cropped depending on the size of the users screen). */
   background-size: cover;
   
 }
