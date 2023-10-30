@@ -193,8 +193,8 @@ footer>p {
 }
 
 .nav-item:hover {
-  background-color:rgba(81, 166, 219, 0.626);
-  color: #2d323b;
+  background-color:rgba(81, 166, 219, 0.529);
+  color: #101317;
   border-radius: 10px;
 }
 
