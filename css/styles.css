@@ -148,9 +148,11 @@ img {
 }
 
 .four-images-css {
+  /* This will set the initial position of the image to be centered both horizontally and vertically, placing the image in the center of the a tag. */
+  background-position: center center;
+  /* This property will tell the browser to scale the image to cover the entire a tag and still maintain the aspect ratio (this would mean some part of the image will be cropped depending on the width of the users screen). */
   background-size: cover;
-  /* First 2 values mean that the background image is initially positioned at the top-left corner of the element. Second 2 values mean in case the background image needs to be scaled to cover the entire element, it should be centered both horizontally and vertically within the element.*/
-  background-position: 0px 0px, 50% 50%;
+  
 }
 
 .grid-item-texts {
@@ -230,7 +232,8 @@ img {
 }
 
 .location-suggestion-content>img {
-  width: 35%;
+  width: 45%;
+  border-radius: 5px;
 }
 
 .location-suggestion-text {
@@ -440,6 +443,11 @@ footer a:hover {
     max-width: 550px;
     margin: 0px;
     padding: 0px;
+  }
+
+  #location-suggestion-img {
+    width: 100%;
+    height: 200px;
   }
 }
 
