@@ -69,13 +69,13 @@ body {
 
 .customer-feedback {
   color: #194381;
-  height: 40vh;
   background-color: #f8f8f8;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: x-large;
   font-weight: 400;
+  padding: 30px 0px;
 }
 
 blockquote {
@@ -353,4 +353,11 @@ li {
     display: none;
   }
 
+}
+
+
+@media only screen and (max-width: 575px) {
+ .customer-feedback {
+  font-size: small;
+}
 }
