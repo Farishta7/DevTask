@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,6 +12,9 @@
     />
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <title>360 travel Home Page</title>
+    <link rel="icon" href="./images/favicon-360.png" type="image/x-icon">
+    <meta name="description" content="Home page for '360 Travel' with a large beach as main image and 4 suggestions for different types of holidays followed by Sri Lanka holiday suggestion, a quote by a customer, contact information and a footer with further contact information and company details.">
     <script
       src="https://kit.fontawesome.com/8a2b811c61.js"
       crossorigin="anonymous"
@@ -46,6 +49,7 @@
         href="javascript:void(0);"
         class="burger-menu-img"
         onclick="myFunction()"
+        aria-label="burger menu that drops down list of options"
       >
         <i class="fa-solid fa-bars fa-2xl" style="color: #fafafa"></i>
       </a>
@@ -68,11 +72,11 @@
     </header>
 
     <section class="slider-images">
-      <img
-        src="./images/beach-img.jpeg"
-        alt=""
-        style="width: 100vw; height: 100vh"
-      />
+        <!-- <img
+          src="./images/beach-img.jpeg"
+          alt="picture of beach with palm trees"
+          style="width: 100vw; height: 100vh"
+        /> -->
     </section>
 
     <section class="grid-container">
@@ -133,7 +137,11 @@
     </section>
 
     <section class="customer-feedback">
-      <img src="./images/open-quote.svg" alt="opening quote sign" class="quotation-marks"/>
+      <img
+        src="./images/open-quote.svg"
+        alt="opening quote sign"
+        class="quotation-marks"
+      />
       <blockquote>
         <p id="quote">
           Booking with 360 Travel was easy and it was great being able to speak
@@ -142,7 +150,11 @@
         </p>
         <cite>- Emma, Huddersfield </cite>
       </blockquote>
-      <img src="./images/close-quote.svg" alt="closing quote sign" class="quotation-marks"/>
+      <img
+        src="./images/close-quote.svg"
+        alt="closing quote sign"
+        class="quotation-marks"
+      />
     </section>
 
     <section class="contact">
@@ -150,8 +162,8 @@
         <h2>Contact us for a quote</h2>
         <p>
           Speak to one of our experienced travel consultants today on
-          <span id="contact-container-number">01484 722 536</span> or fill in our contact form for one of our
-          team to get back to you.
+          <span id="contact-container-number">01484 722 536</span> or fill in
+          our contact form for one of our team to get back to you.
         </p>
         <a href="#" class="btn">FILL IN THE CONTACT FORM</a>
       </div>
