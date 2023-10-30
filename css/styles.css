@@ -89,6 +89,7 @@ body {
   color: #fff;
   margin: 15px 10px;
   animation: fadeIn 5s;
+  z-index: 99999;
 }
 
 .nav-item:hover {
