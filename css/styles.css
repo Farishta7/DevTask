@@ -9,6 +9,14 @@ body {
   width: 100%;
 }
 
+/* -------------------------------------- HEADER (navbar) - START */
+
+.header-img {
+  width: 200px;
+  padding: 22px 0px 22px 22px;
+  animation: fadeIn 5s;
+}
+
 .navbar {
   position: fixed;
   top: 0%;
@@ -17,23 +25,6 @@ body {
   background-color: transparent;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.748), transparent);
   z-index: 999;
-
-}
-
-.header-img {
-  width: 200px;
-  padding: 22px 0px 22px 22px;
-  animation: fadeIn 5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 .header-contact-section {
@@ -48,11 +39,185 @@ body {
   animation: fadeIn 5s;
 }
 
+.header-phone-number,
+.header-email {
+  padding: 3px 0px;
+}
+
+.header-phone-number,
+.header-email,
+.nav-item,
+.btn,
+.burger-menu-item>a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.burger-menu-img {
+  display: none;
+}
+
+#burger-menu-list {
+  display: none;
+  background-color: rgb(186, 180, 180);
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+.burger-menu-item {
+  padding: 20px 20px 20px 35px;
+  margin: 0;
+}
+
+.burger-menu-item:hover {
+  background-color: #464d56;
+}
+
+.nav-box {
+  position: relative;
+  float: right;
+  display: block;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  padding: 20px 10px;
+  font-weight: bold;
+  color: #fff;
+  margin: 15px 10px;
+  animation: fadeIn 5s;
+}
+
+.nav-item:hover {
+  background-color: rgba(81, 166, 219, 0.529);
+  border-radius: 10px;
+}
+
+a {
+  color: #fff;
+
+}
+
+li {
+  list-style: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+img {
+  object-fit: cover;
+}
+
+/* -------------------------------------- HEADER (navbar) - END */
+
+/* -------------------------------------- SLIDER IMAGES - START */
+
+.slider-images {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+/* -------------------------------------- SLIDER IMAGES - END */
+
+/* -------------------------------------- SECTION - GRID CONTAINER- START */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+}
+
+.grid-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 400px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.four-images-css {
+  background-size: cover;
+  /* First 2 values mean that the background image is initially positioned at the top-left corner of the element. Second 2 values mean in case the background image needs to be scaled to cover the entire element, it should be centered both horizontally and vertically within the element.*/
+  background-position: 0px 0px, 50% 50%;
+}
+
+.grid-item-texts {
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0;
+  color: white;
+  padding: 15px 15px 25px 15px;
+  box-sizing: border-box;
+}
+
+.grid-item-title {
+  /* The "Y" means vertical direction. The transform property is moving the element 100% of its own height downwards, moving the element out of the visible area and not visible in its original position. The following is equivalent to this: transform: translate(0%, 100%); */
+  transform: translateY(100%);
+  /* This describes the transition effect that will happen to the change in the 'transform' property above. 'transform' is the property being transitioned. The transition will take 0.8 seconds to complete. 'ease-in-out' creates a smooth, gradual start and end to the transition. it's the timing function which will make the transition start slowly, speed up, then slow down again. The following can also be written as:
+  
+  transition-property: transform;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+  
+  */
+  transition: transform 0.8s ease-in-out;
+  margin: 0;
+  font-size: x-large;
+}
+
+.grid-item .grid-item-description {
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  margin: 10px 0px;
+  transform: translateY(100%);
+  transition: transform 0.8s ease-in-out;
+}
+
+.grid-item:hover .grid-item-description,
+.grid-item:hover .grid-item-title {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.img-1 {
+  background-image: url('../images/cruise-image.jpg');
+}
+
+.img-2 {
+  background-image: url('../images/ballons-image.jpg');
+}
+
+.img-3 {
+  background-image: url('../images/hiking-image.jpg');
+}
+
+.img-4 {
+  background-image: url('../images/garden-image.jpg');
+}
+
+/* -------------------------------------- SECTION - GRID CONTAINER- END */
+
+/* -------------------------------------- SECTION - LOCATION SUGGESTION - START  */
+
 .location-suggestion {
   background-color: #194381;
   padding: 80px 40px;
 }
-
 
 .location-suggestion-content {
   max-width: 960px;
@@ -67,6 +232,28 @@ body {
 .location-suggestion-content>img {
   width: 35%;
 }
+
+.location-suggestion-text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 90px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #106b98;
+  font-weight: bold;
+  border-radius: 5px;
+  max-width: 180px;
+}
+
+.btn:hover {
+  background-color: rgba(239, 61, 61, 0.779);
+}
+
+/* -------------------------------------- SECTION - LOCATION SUGGESTION - END  */
+
+/* -------------------------------------- SECTION - CUSTOMER FEEDBACK - START  */
 
 .customer-feedback {
   color: #194381;
@@ -90,47 +277,14 @@ cite {
   font-weight: bolder;
 }
 
-footer {
-  background-color: #67c2e4;
-  padding: 15px;
-  text-align: center;
-  color: #fff;
-  font-size: 14px;
-}
+/* -------------------------------------- SECTION - CUSTOMER FEEDBACK - END  */
 
-
-
-
-.footer-company-logo-img {
-  width: 100px;
-}
-
-.footer-divider {
-  color: aquamarine;
-  padding: 0px 10px;
-}
-
-footer>p {
-  margin: 0px;
-  margin-bottom: 8px;
-}
+/* -------------------------------------- SECTION - CONTACT - START  */
 
 .contact {
   background-color: #194381;
   padding: 70px 0px;
   color: #fff;
-}
-
-.contact-container>p {
-  line-height: 30px;
-  /* border: 1px solid red; */
-  padding-bottom: 20px;
-
-}
-
-.contact-container>p>span {
-  font-size: x-large;
-  font-style: italic;
 }
 
 .contact-container {
@@ -141,129 +295,40 @@ footer>p {
   font-size: 18px;
 }
 
-.btn {
-  padding: 10px 20px;
-  background-color: #106b98;
-  font-weight: bold;
-  border-radius: 5px;
-  max-width: 180px;
+.contact-container>p {
+  line-height: 30px;
+  padding-bottom: 20px;
 }
 
-.btn:hover {
-  background-color: rgba(239, 61, 61, 0.779);
-}
-
-.location-suggestion-text {
-  display: flex;
-  flex-direction: column;
-  margin-right: 90px;
-
-}
-
-.nav-box {
-  position: relative;
-  float: right;
-  display: block;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.nav-item {
-  padding: 20px 10px;
-  font-weight: bold;
-  color: #fff;
-  margin: 15px 10px;
-  animation: fadeIn 5s;
-
-}
-
-.header-phone-number,
-.header-email {
-  padding: 3px 0px;
-}
-
-.header-phone-number,
-.header-email,
-.nav-item,
-.btn,
-.burger-menu-item>a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.nav-item:hover {
-  background-color:rgba(81, 166, 219, 0.529);
-  border-radius: 10px;
-}
-
-.slider-images {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  text-align: center;
-}
-
-img {
-  object-fit: cover;
-}
-
-.four-images-css {
-  background-size: cover;
-  background-position: 0px 0px, 50% 50%;
-}
-
-.grid-item {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 400px;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-
-}
-
-.grid-item-texts {
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  bottom: 0;
-  color: white;
-  padding: 15px 15px 25px 15px;
-  box-sizing: border-box;
-}
-
-.grid-item-title {
-  transform: translateY(100%);
-  transition: transform 0.8s ease-in-out;
-  margin: 0;
-  z-index: 1;
+.contact-container>p>span {
   font-size: x-large;
+  font-style: italic;
 }
 
-.grid-item .grid-item-description {
-  opacity: 0;
-  visibility: hidden;
+/* -------------------------------------- SECTION - CONTACT - END  */
+
+/* -------------------------------------- FOOTER - START */
+
+footer {
+  background-color: #67c2e4;
+  padding: 15px;
   text-align: center;
-  margin: 10px 0px;
-  transform: translateY(100%);
-  transition: transform 0.8s ease-in-out;
-}
-
-.grid-item:hover .grid-item-description,
-.grid-item:hover .grid-item-title {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-a {
   color: #fff;
+  font-size: 14px;
+}
 
+.footer-company-logo-img {
+  width: 100px;
+}
+
+.footer-divider {
+  color: rgb(96, 139, 125);
+  padding: 0px 10px;
+}
+
+footer>p {
+  margin: 0px;
+  margin-bottom: 8px;
 }
 
 footer a:not(:first-child) {
@@ -274,22 +339,62 @@ footer a:hover {
   color: black
 }
 
-
-
-.img-1 {
-  background-image: url('../images/cruise-image.jpg');
+.footer-social-icons {
+  padding: 25px 5px 10px 5px;
 }
 
-.img-2 {
-  background-image: url('../images/ballons-image.jpg');
+/* -------------------------------------- FOOTER - END */
+
+/* -------------------------------------- MEDIA QUERIES - START */
+
+@media only screen and (max-width: 370px) {
+  #quote {
+    font-size: smaller;
+  }
+
+  .header-img {
+    width: 160px;
+  }
+
+  .contact-container,
+  .btn {
+    font-size: smaller;
+  }
+
+  .contact-container .btn {
+    font-size: x-small;
+  }
 }
 
-.img-3 {
-  background-image: url('../images/hiking-image.jpg');
+@media only screen and (max-width: 575px) {
+  .customer-feedback {
+    font-size: medium;
+    padding: 15px 0px;
+  }
+
+  blockquote {
+    line-height: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .quotation-marks {
+    width: 10%;
+  }
+
+  .contact-container {
+    font-size: medium;
+  }
+
+  #contact-container-number {
+    font-size: medium;
+  }
 }
 
-.img-4 {
-  background-image: url('../images/garden-image.jpg');
+@media only screen and (max-width: 605px) {
+  .header-contact-section {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -298,6 +403,7 @@ footer a:hover {
     grid-template-columns: auto;
   }
 
+  /* Ensure grid-container description is visible at all times when screen width is below 768px because it's likely a hover option isn't available to the user e.g. phone */
   .grid-item .grid-item-description {
     opacity: 1;
     visibility: visible;
@@ -312,7 +418,7 @@ footer a:hover {
   }
 
   .grid-item-title {
-    font-size:large;
+    font-size: large;
   }
 
   .location-suggestion {
@@ -337,36 +443,6 @@ footer a:hover {
   }
 }
 
-.burger-menu-img {
-  display: none;
-}
-
-li {
-  list-style: none;
-}
-
-#burger-menu-list {
-  display: none;
-  background-color: rgb(186, 180, 180);
-  font-weight: bold;
-  margin: 0px;
-  padding: 0px;
-}
-
-.burger-menu-item {
-  padding: 20px 20px 20px 35px;
-  margin: 0;
-}
-
-.footer-social-icons {
-  padding: 25px 5px 10px 5px;
-  /* border: 1px solid red; */
-}
-
-.burger-menu-item:hover {
-  background-color: #464d56;
-}
-
 @media only screen and (max-width: 1096px) {
   .nav-box {
     display: none;
@@ -384,51 +460,4 @@ li {
   }
 }
 
-@media only screen and (max-width: 605px) {
-  .header-contact-section {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .customer-feedback {
-    font-size:medium;
-    padding: 15px 0px;
-  }
-
-  blockquote {
-    line-height: 25px;
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-
-  .quotation-marks {
-    width: 10%;
-  }
-
-  .contact-container {
-    font-size: medium;
-  }
-
-  #contact-container-number {
-    font-size: medium;
-  }
-}
-
-@media only screen and (max-width: 370px) {
-  #quote {
-    font-size: smaller;
-  }
-
-  .header-img {
-  width: 160px;
-  }
-
-  .contact-container, .btn {
-    font-size: smaller;
-  }
-
-  .contact-container .btn {
-    font-size: x-small;
-  }
-}
+/* -------------------------------------- MEDIA QUERIES - END */
