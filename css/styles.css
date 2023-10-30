@@ -1,0 +1,356 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.748), transparent);
+  z-index: 999;
+}
+
+.header-img {
+  width: 200px;
+  padding: 22px 0px 22px 22px;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.header-contact-section {
+  display: block;
+  float: right;
+  border-left: 1px solid white;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeIn 5s;
+}
+
+.location-suggestion {
+  background-color: #194381;
+  padding: 80px 40px;
+}
+
+
+.location-suggestion-content {
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  color: #fff;
+}
+
+.location-suggestion-content>img {
+  width: 35%;
+}
+
+.customer-feedback {
+  color: #194381;
+  height: 40vh;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  font-weight: 400;
+}
+
+blockquote {
+  font-style: italic;
+  max-width: 960px;
+  text-align: center;
+  line-height: 40px;
+}
+
+cite {
+  font-weight: bolder;
+}
+
+footer {
+  background-color: #67c2e4;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+
+}
+
+.footer-company-logo-img {
+  width: 100px;
+}
+
+.footer-divider {
+  color: aquamarine;
+}
+
+footer>p {
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+.contact {
+  background-color: #194381;
+  padding: 70px 0px;
+  color: #fff;
+}
+
+.contact-container>p {
+  line-height: 30px;
+  /* border: 1px solid red; */
+  padding-bottom: 20px;
+
+}
+
+.contact-container>p>span {
+  font-size: x-large;
+  font-style: italic;
+}
+
+.contact-container {
+  max-width: 900px;
+  text-align: center;
+  margin: 0px auto;
+  padding: 0px 30px 20px 30px;
+
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #106b98;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 180px;
+}
+
+.btn:hover {
+  background-color: rgba(239, 61, 61, 0.779);
+}
+
+.location-suggestion-text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 90px;
+
+}
+
+.nav-box {
+  position: relative;
+  float: right;
+  display: block;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  padding: 35px 20px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0px;
+  animation: fadeIn 5s;
+
+}
+
+.header-phone-number,
+.header-email {
+  padding: 3px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-item:hover {
+  background-color: #fff;
+  color: #194381;
+}
+
+.slider-images {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+}
+
+
+img {
+  object-fit: cover;
+}
+
+.four-images-css {
+  background-size: cover;
+  background-position: 0px 0px, 50% 50%;
+}
+
+.grid-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 400px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+
+}
+
+.grid-item-texts {
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0;
+  color: white;
+  padding: 15px 15px 25px 15px;
+  box-sizing: border-box;
+}
+
+.grid-item-title {
+  transform: translateY(100%);
+  transition: transform 0.8s ease-in-out;
+  margin: 0;
+  z-index: 1;
+  font-size: x-large;
+}
+
+.grid-item .grid-item-description {
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  margin: 10px 0px;
+  transform: translateY(100%);
+  transition: transform 0.8s ease-in-out;
+}
+
+.grid-item:hover .grid-item-description,
+.grid-item:hover .grid-item-title {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.img-1 {
+  background-image: url('../images/cruise-image.jpg');
+}
+
+.img-2 {
+  background-image: url('../images/ballons-image.jpg');
+}
+
+.img-3 {
+  background-image: url('../images/hiking-image.jpg');
+}
+
+.img-4 {
+  background-image: url('../images/garden-image.jpg');
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .grid-item {
+    width: 100%;
+    height: 320px;
+  }
+
+  .location-suggestion {
+    padding: 40px 40px;
+  }
+
+  .location-suggestion-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin: 0px auto;
+  }
+
+  .location-suggestion-text > p {
+    margin-top: 0px;
+  }
+
+  .location-suggestion-text {
+    width: 550px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+}
+
+.burger-menu-img {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+#burger-menu-list {
+  display: none;
+  background-color: rgb(186, 180, 180);
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+.burger-menu-item {
+  padding: 20px 20px 20px 35px;
+  margin: 0;
+}
+
+.burger-menu-item:hover {
+  background-color: #464d56;
+}
+
+@media only screen and (max-width: 1096px) {
+  .nav-box {
+    display: none;
+  }
+
+  .burger-menu-img {
+    display: block;
+    float: right;
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .burger-menu-img:hover {
+    background-color: #106b98;
+    color: black;
+  }
+
+}
+
+@media only screen and (max-width: 605px) {
+  .header-contact-section {
+    display: none;
+  }
+
+}

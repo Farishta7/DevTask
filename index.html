@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic%7CSolway:300,regular%7CHind+Madurai:regular%7CSource+Sans+Pro:regular,700,900&display=swap"
+      rel="stylesheet"
+      media="all"
+    />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/8a2b811c61.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("burger-menu-list");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a>
+        <img
+          src="https://assets.website-files.com/5e2ebc435b8bed1939bcca79/5e2ec95f2ca1f714a51ac26f_360travellogo.svg"
+          alt="360 travel logo"
+          class="header-img"
+        />
+      </a>
+
+      <div class="header-contact-section">
+        <a href="#" class="header-phone-number">01484 722 536</a>
+        <a href="#" class="header-email">enquiries@360degreetravel.co.uk</a>
+      </div>
+
+      <a
+        href="javascript:void(0);"
+        class="burger-menu-img"
+        onclick="myFunction()"
+      >
+        <i class="fa-solid fa-bars fa-2xl" style="color: #fafafa"></i>
+      </a>
+
+      <div class="nav-box">
+        <a href="#" class="nav-item"> DESTINATIONS </a>
+        <a href="#" class="nav-item"> SPECIAL OFFERS </a>
+        <a href="#" class="nav-item"> ABOUT </a>
+        <a href="#" class="nav-item"> CONTACT </a>
+      </div>
+
+      <div>
+        <ul id="burger-menu-list">
+          <li class="burger-menu-item"><a href="#"> DESTINATIONS </a></li>
+          <li class="burger-menu-item"><a href="#"> SPECIAL OFFERS </a></li>
+          <li class="burger-menu-item"><a href="#"> ABOUT </a></li>
+          <li class="burger-menu-item"><a href="#"> CONTACT </a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="slider-images">
+      <img
+        src="https://assets.website-files.com/5e2ebc435b8bed1939bcca79/5e2ed11d5c50634a0ef32c0d_vietnam-3738879_1920.jpg"
+        alt=""
+        style="width: 100vw; height: 100vh"
+      />
+    </section>
+
+    <section class="grid-container">
+      <a href="#" class="grid-item img-1 four-images-css">
+        <div class="grid-item-texts">
+          <h3 class="grid-item-title">Cruising Holidays</h3>
+          <p class="grid-item-description">
+            Explore new destinations in style, aboard a luxury cruise ship.
+          </p>
+        </div>
+      </a>
+
+      <a href="#" class="grid-item img-2 four-images-css">
+        <div class="grid-item-texts">
+          <h3 class="grid-item-title">Adventure Holidays</h3>
+          <p class="grid-item-description">
+            Reach new heights with our selection of activity based adventures.
+          </p>
+        </div>
+      </a>
+
+      <a href="#" class="grid-item img-3 four-images-css">
+        <div class="grid-item-texts">
+          <h3 class="grid-item-title">Walking Holidays</h3>
+          <p class="grid-item-description">
+            Get off the beaten track and see more with a walking holiday.
+          </p>
+        </div>
+      </a>
+
+      <a href="#" class="grid-item img-4 four-images-css">
+        <div class="grid-item-texts">
+          <h3 class="grid-item-title">City Breaks</h3>
+          <p class="grid-item-description">
+            Experience the hustle and bustle of a new urban landscape.
+          </p>
+        </div>
+      </a>
+    </section>
+
+    <section class="location-suggestion" id="location-suggestion">
+      <div class="location-suggestion-content">
+        <div class="location-suggestion-text">
+          <h2>Explore Sri Lanka</h2>
+          <p>
+            Luxury Sri Lanka tour with wildlife safari and beach break, from
+            £1,186 per person.
+          </p>
+          <p>Based on 2 people for 10 nights.</p>
+          <a href="#" class="btn">FIND OUT MORE</a>
+        </div>
+        <img
+          src="./images/train-image.jpg"
+          alt="image of train near forrest"
+          id="location-suggestion-img"
+        />
+      </div>
+    </section>
+
+    <section class="customer-feedback">
+      <img src="./images/open-quote.svg" alt="opening quote sign" />
+      <blockquote>
+        <p>
+          Booking with 360 Travel was easy and it was great being able to speak
+          to a local travel consultant who understood what we wanted from a
+          holiday.
+        </p>
+        <cite>- Emma, Huddersfield </cite>
+      </blockquote>
+      <img src="./images/close-quote.svg" alt="closing quote sign" />
+    </section>
+
+    <section class="contact">
+      <div class="contact-container">
+        <h2>Contact us for a quote</h2>
+        <p>
+          Speak to one of our experienced travel consultants today on
+          <span>01484 722 536</span> or fill in our contact form for one of our
+          team to get back to you.
+        </p>
+        <a href="#" class="btn">FILL IN THE CONTACT FORM</a>
+      </div>
+    </section>
+
+    <footer>
+      <a>
+        <img
+          src="https://assets.website-files.com/5e2ebc435b8bed1939bcca79/5e2ec95f2ca1f714a51ac26f_360travellogo.svg"
+          alt="360 travel logo"
+          class="footer-company-logo-img"
+        />
+      </a>
+      <p>© 360 Degree Travel 2020.</p>
+      <p style="display: inline">01484 722 536</p>
+      <span class="footer-divider">|</span>
+      <a href="#">enquiries@360degreetravel.co.uk</a>
+    </footer>
+  </body>
+</html>
