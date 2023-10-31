@@ -59,7 +59,7 @@ body {
 
 #burger-menu-list {
   display: none;
-  background-color: rgb(186, 180, 180);
+  background-color: rgba(186, 180, 180, 0.595);
   font-weight: bold;
   margin: 0px;
   padding: 0px;
@@ -71,7 +71,7 @@ body {
 }
 
 .burger-menu-item:hover {
-  background-color: #464d56;
+  background-color: #464d5697;
 }
 
 .nav-box {
@@ -92,7 +92,7 @@ body {
 }
 
 .nav-item:hover {
-  background-color: rgba(81, 166, 219, 0.529);
+  background-color: rgba(134, 142, 147, 0.796);
   border-radius: 10px;
 }
 
@@ -128,7 +128,7 @@ img {
   margin: 0;
   height: 100vh;
   background-image: url('../images/beach-img.jpeg');
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.353);
   background-position: center center;
   background-size: cover;
 }
@@ -284,6 +284,16 @@ cite {
   font-weight: bolder;
 }
 
+@keyframes pulse {
+  from { transform: scale(0.98); }
+  to { transform: scale(1.4); }
+}
+
+.pulse {
+  animation: pulse 1s infinite ease-in-out alternate;
+  margin: 0px 20px;
+}
+
 /* -------------------------------------- SECTION - CUSTOMER FEEDBACK - END  */
 
 /* -------------------------------------- SECTION - CONTACT - START  */
@@ -325,7 +335,7 @@ footer {
 }
 
 .footer-company-logo-img {
-  width: 100px;
+  width: 100px;  
 }
 
 .footer-divider {
