@@ -152,11 +152,10 @@ img {
 }
 
 .four-images-css {
-  /* This will set the initial position of the image to be centered both horizontally and vertically, placing the image in the center of the a tag. */
+  /* This will set the initial position of the image to be centered both horizontally and vertically, placing the image in the center of my a tag. */
   background-position: center center;
-  /* This property will tell the browser to scale the image to cover the entire a tag and still maintain the aspect ratio (this will mean some part of the image will be cropped depending on the size of the users screen). */
+  /* This property will tell the browser to scale the image to cover my entire a tag and still maintain the aspect ratio (however, this will mean some part of the image will be cropped depending on the size of the users screen). */
   background-size: cover;
-
 }
 
 .grid-item-texts {
@@ -247,11 +246,12 @@ img {
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 10px 10px;
   background-color: #106b98;
   font-weight: bold;
   border-radius: 5px;
   max-width: 180px;
+  text-align: center;
 }
 
 .btn:hover {
@@ -285,8 +285,13 @@ cite {
 }
 
 @keyframes pulse {
-  from { transform: scale(0.98); }
-  to { transform: scale(1.4); }
+  from {
+    transform: scale(0.98);
+  }
+
+  to {
+    transform: scale(1.4);
+  }
 }
 
 .pulse {
@@ -335,7 +340,7 @@ footer {
 }
 
 .footer-company-logo-img {
-  width: 100px;  
+  width: 100px;
 }
 
 .footer-divider {
@@ -349,7 +354,7 @@ footer>p {
 }
 
 footer a {
-   color: #000000;
+  color: #000000;
 }
 
 footer a:hover {
@@ -373,13 +378,13 @@ footer a:hover {
     width: 160px;
   }
 
-  .contact-container,
+  /* .contact-container,
   .btn {
-    font-size: smaller;
-  }
+    font-size: 11px;
+  } */
 
-  .contact-container .btn {
-    font-size: x-small;
+  #blue-btn {
+    font-size: 12px;
   }
 }
 
