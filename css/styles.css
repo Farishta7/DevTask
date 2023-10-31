@@ -413,7 +413,7 @@ footer a:hover {
   }
 }
 
-@media only screen and (max-width: 605px) {
+@media only screen and (max-width: 625px) {
   .header-contact-section {
     display: none;
   }
